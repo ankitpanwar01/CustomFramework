@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "CustomFramework",
             targets: ["CustomFramework"]),
+        .library(
+            name: "WireWheel",
+            targets: ["WireWheel"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +26,9 @@ let package = Package(
             // Targets can depend on other targets in this package, and on products in packages this package depends on.
             .binaryTarget(
                 name: "CustomFramework",
-                path: "./Sources/CustomFramework.xcframework")
+                path: "./Sources/CustomFramework.xcframework"),
+            .binaryTarget(
+                name: "WireWheel",
+                path: "./Sources/WireWheel.xcframework")
         ]
 )
