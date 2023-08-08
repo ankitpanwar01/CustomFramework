@@ -15,7 +15,7 @@ let package = Package(
             targets: ["CustomFramework"]),
         .library(
             name: "WireWheel",
-            targets: ["WireWheel"]),
+            targets: ["WireWheel"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
